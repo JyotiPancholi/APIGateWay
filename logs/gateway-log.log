@@ -1,0 +1,66 @@
+18:47:25.986 [main] INFO  com.adt.gateway.GatewayApplication / - Starting GatewayApplication using Java 17.0.7 on DESKTOP-JRQDH1I with PID 14828 (C:\HRMS_TASK2\hrms-apigateway\target\classes started by hp in C:\HRMS_TASK2\hrms-apigateway)
+18:47:25.994 [main] DEBUG com.adt.gateway.GatewayApplication / - Running with Spring Boot v2.7.7, Spring v5.3.24
+18:47:25.996 [main] INFO  com.adt.gateway.GatewayApplication / - No active profile set, falling back to 1 default profile: "default"
+18:47:30.427 [main] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer / - Netty started on port 9091
+18:47:30.681 [main] INFO  com.adt.gateway.GatewayApplication / - Started GatewayApplication in 6.042 seconds (JVM running for 8.796)
+18:50:07.311 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin / - Application shutdown requested.
+18:53:12.352 [main] INFO  com.adt.gateway.GatewayApplication / - Starting GatewayApplication using Java 17.0.7 on DESKTOP-JRQDH1I with PID 26592 (C:\HRMS_TASK2\hrms-apigateway\target\classes started by hp in C:\HRMS_TASK2\hrms-apigateway)
+18:53:12.358 [main] DEBUG com.adt.gateway.GatewayApplication / - Running with Spring Boot v2.7.7, Spring v5.3.24
+18:53:12.360 [main] INFO  com.adt.gateway.GatewayApplication / - No active profile set, falling back to 1 default profile: "default"
+18:53:16.804 [main] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer / - Netty started on port 9091
+18:53:17.066 [main] INFO  com.adt.gateway.GatewayApplication / - Started GatewayApplication in 5.533 seconds (JVM running for 7.285)
+18:58:33.089 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin / - Application shutdown requested.
+19:04:07.174 [main] INFO  com.adt.gateway.GatewayApplication / - Starting GatewayApplication using Java 11.0.16 on DESKTOP-JRQDH1I with PID 25740 (C:\HRMS_TASK2\hrms-apigateway\target\classes started by hp in C:\HRMS_TASK2\hrms-apigateway)
+19:04:07.181 [main] DEBUG com.adt.gateway.GatewayApplication / - Running with Spring Boot v2.7.7, Spring v5.3.24
+19:04:07.183 [main] INFO  com.adt.gateway.GatewayApplication / - No active profile set, falling back to 1 default profile: "default"
+19:04:11.140 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin / - Application shutdown requested.
+19:04:12.091 [main] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer / - Netty started on port 9091
+19:04:12.752 [main] INFO  com.adt.gateway.GatewayApplication / - Started GatewayApplication in 6.582 seconds (JVM running for 8.426)
+19:04:26.173 [main] INFO  com.adt.gateway.GatewayApplication / - Starting GatewayApplication using Java 11.0.16 on DESKTOP-JRQDH1I with PID 25980 (C:\HRMS_TASK2\hrms-apigateway\target\classes started by hp in C:\HRMS_TASK2\hrms-apigateway)
+19:04:26.177 [main] DEBUG com.adt.gateway.GatewayApplication / - Running with Spring Boot v2.7.7, Spring v5.3.24
+19:04:26.179 [main] INFO  com.adt.gateway.GatewayApplication / - No active profile set, falling back to 1 default profile: "default"
+19:04:31.001 [main] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer / - Netty started on port 9091
+19:04:31.666 [main] INFO  com.adt.gateway.GatewayApplication / - Started GatewayApplication in 6.296 seconds (JVM running for 8.157)
+19:04:50.514 [reactor-http-nio-1] ERROR org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler / - [c2418456-1]  500 Server Error for HTTP POST "/api/auth/login"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9092
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/auth/login" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+19:05:04.253 [reactor-http-nio-1] ERROR org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler / - [c2418456-2]  500 Server Error for HTTP POST "/api/auth/login"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:9092
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.sleuth.instrument.web.TraceWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/auth/login" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.86.Final.jar:4.1.86.Final]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+19:12:00.680 [RMI TCP Connection(13)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin / - Application shutdown requested.
